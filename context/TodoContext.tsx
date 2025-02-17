@@ -1,10 +1,10 @@
 import React, { createContext, useState, ReactNode } from 'react';
 
 type TodoContextType = {
-  todos: string[]; //Lista de tareas
-  addTodo: (todo: string) => void; //Función para agregar tarea
-  editTodo: (index: number, newTodo: string) => void; //Función para editar tarea
-  deleteTodo: (index: number) => void; //Función para eliminar tarea
+  todos: string[] //Lista de tareas
+  addTodo: (todo: string) => void //Función para agregar tarea
+  editTodo: (index: number, newTodo: string) => void //Función para editar tarea
+  deleteTodo: (index: number) => void //Función para eliminar tarea
 }
 
 const TodoContext = createContext<TodoContextType | undefined>(undefined)
